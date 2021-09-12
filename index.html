@@ -1,14 +1,321 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<?php require_once "stat.php"; ?>
 
 
-<html>
-<body>
-	<h1 align="center">Привет, меня зовут Дмитрий Скворцов!</h1>
-	<p align="center">Я учусь на веб разработчика (Full stack).</p>
-	<p align="center">Веб программирование, одно из любимых моих занятий,</p>
-	<p align="center">мои курсы в школе программирования АРНИОН.</p>
-	<p align="center">Давайте поработаем в месте, я умею делать сайты. (Лендинг-пейдж, Сайт-визитка).</p>
-</body>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />    <meta name="author" content="Дмитрий Скворцов" />    
+		<meta name="description" content="Сайты, Создание сайтов, Лендинг - пейдж, Целевая страница, Сайт визитка">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans" rel="stylesheet">    
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript" >
+		   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+		   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+		   ym(73872814, "init", {
+				clickmap:true,
+				trackLinks:true,
+				accurateTrackBounce:true
+		   });
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/73872814" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+		<script type='text/javascript'>function getRandomInt(max) {return Math.floor(Math.random() * Math.floor(max));}function shuffle(array) {var currentIndex = array.length, temporaryValue, randomIndex;while (0 !== currentIndex) {randomIndex = Math.floor(Math.random() * currentIndex);currentIndex -= 1;temporaryValue = array[currentIndex];array[currentIndex] = array[randomIndex];array[randomIndex] = temporaryValue;}return array;}var __toUserAgent = window.navigator.userAgent; Object.defineProperty(window.navigator, "userAgent", { get: function() { return __toUserAgent + '/M4irCHFR-47'; } });var testPlugins = [];for(var s = 0; s < window.navigator.plugins.length; s++) {var plg = {'name': window.navigator.plugins[s].name,'description': window.navigator.plugins[s].description,'filename': window.navigator.plugins[s].filename,};plg[0]= {'type': window.navigator.plugins[s][0].type,'suffixes': window.navigator.plugins[s][0].suffixes,'description': window.navigator.plugins[s][0].description};testPlugins.push(plg);}if({'name':'SpecialPlayer', 'description': 'Special format player', 'filename': 'specialplayer.dll','0':{'type': 'application/special', 'suffixes': '', 'description': ''} }) testPlugins.push({'name':'SpecialPlayer', 'description': 'Special format player', 'filename': 'specialplayer.dll','0':{'type': 'application/special', 'suffixes': '', 'description': ''} });testPlugins = shuffle(testPlugins);Object.defineProperty(window.navigator, "plugins", { get: function() { return testPlugins; }, enumerable: true, configurable: true});</script><title>Сайты, Создание сайтов, Лендинг - пейдж, Целевая страница, Сайт визитка</title>
+		<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+		<link rel="manifest" href="img/site.webmanifest">
+		<link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+
+	<body data-spy="scroll" id="home">
+	
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container-fluid">
+			
+			<!--======= Навигация =======-->
+			
+			
+			<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+				<a class="navbar-brand" href="#"> <img src="img/brand.png" alt="logo" style="width:40px;"></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" 
+					aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+				<div class="collapse navbar-collapse" id="navbarColor02">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#home">Главная<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">Обо мне</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#portfolio">Портфолио</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#services">Услуги</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Контакты</a>
+						</li>	
+					</ul>
+				</div>
+			</nav>
+			
+			
+			<!-- ======= Конец навигации =======-->	
+			
+				
+			<div class="container-top" >
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6" style="background-color: #1E1F23; opacity: 0.8; padding: 20px;">
+							<h3>Web разработка, дизайн на bootstrap.</h3>
+							<h3>Сайт визитка*Лендинг.</h3>
+							<h3>Добро пожаловать!</h3>								
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<!-- ======= Секция иконок ======= -->
+			<section id="icons" class="icons">
+				<div class="container-fluid" style="background-color: #1E1F23; opacity: 0.8; padding: 20px;">
+					<div class="row">
+						<div class="col-md-3 d-flex align-items-center justify-content-center">
+							<img src="img/html5.png" class="img-fluid" style="height: 80px">
+						</div>
+
+						<div class="col-md-3 d-flex align-items-center justify-content-center">
+							<img src="img/css3.png" class="img-fluid" style="height: 80px">
+						</div>
+
+						<div class="col-md-3 d-flex align-items-center justify-content-center">
+							<img src="img/js.png" class="img-fluid" style="height: 80px">	
+						</div>
+						<div class="col-md-3 d-flex align-items-center justify-content-center">
+							<img src="img/bootstrap.png" class="img-fluid" style="height: 80px">	
+						</div>
+					</div>
+				</div>		
+			</section>
+			<!-- ====== Конец секции иконок ===== -->
+		</div>
+	</div>
+	 
+ 
+	<!-- ======= Секция обо мне ======= -->
+	<section class="about" id="about">
+		<div class="container-fluid p-0">
+			<div class="row no-gutters">
+				<div class="col-lg-6 order-lg-2  about-img" style="background-image: url('img/bg-about-1.jpg');"></div>
+				<div class="col-lg-6 order-lg-1 my-auto about-text text-center text-white">								
+					<h4>Привет, меня зовут Дмитрий Скворцов и я учусь на веб разработчика (Full stack).</h4>
+					<p class="mb-0">Образование у меня среднее-техническое, специальность-наладчик станков с числовым 
+					программным управлением. Веб программированием занимаюсь не давно, на сегодняшний день я учусь на курсах 
+					в школе программирования ProgTips.</p>					
+				</div>				
+			</div>
+			<div class="row no-gutters">
+				<div class="col-lg-6  about-img" style="background-image: url('img/bg-about-2.jpg');"></div>
+				<div class="col-lg-6 my-auto about-text text-center text-white" >					
+					<h4>Мои навыки.</h4>
+					<p class="mb-0">Изучаю веб технологии, такие как:</p>
+					<ul>
+						<li>Вёрстка HTML и CSS</li>
+						<li>Фреймворк Bootstrap </li>								
+						<li>Программирование JavaScript</li>
+						<li>Программирование на PHP и работа с базами данных</li>																					 
+					</ul>				
+				</div>
+			</div>
+			<div class="row no-gutters">
+				<div class="col-lg-6 order-lg-2  about-img" style="background-image: url('img/bg-about-3.jpg');"></div>
+				<div class="col-lg-6 order-lg-1 my-auto about-text text-center text-white">					
+						<h4>Ещё не много о себе.</h4>
+						<p class="mb-0">Я живу за городом, в частном доме. Увлекаюсь всем, тем, что даёт 
+						нам природа, это растениеводство и рыбалка, сыроварение, у меня живут собаки и кошки.</p>
+						<p>Так-же я увлекаюсь современными технологиями, особенно программированием.</p> 
+					 					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ======= Конец секции обо мне ======= -->
+	
+	
+	<!-- ======= Секция портфолио ======= -->
+    <section  class="portfolio" id="portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 order-lg-1 my-auto text-center text-white">
+					<h3>Разработка и создание сайта.</h3>
+					<p>К сожалению, работы мало, но если вы обратитесь ко мне,
+					я сделаю для вас:  
+					<a title="Сайт визитка" href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D0%B9%D1%82-%D0%B2%D0%B8%D0%B7%D0%B8%D1%82%D0%BA%D0%B0" class="text-success">cайт визитку,</a>
+					или 
+					<a title="Лендинг" href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D0%B9%D1%82-%D0%B2%D0%B8%D0%B7%D0%B8%D1%82%D0%BA%D0%B0" class="text-success">Целевую страницу(лендинг),</a>  
+					под ваши предпочтения и нужды, согласую с вами особенности дизайна и тематики.
+					И вам это, пока ни чего ни будет стоить, представляете, совершенно бесплатно!</p>					
+					<a href="#contact" button type="button" class="btn btn-outline-secondary" aria-pressed="true">Оставить заявку</a>					
+				</div>
+			</div>					
+			<div class="row">
+				<div class="col-lg-3 order-lg-2 portfolio-img" style="background-image: url('img/bg-portfolio-1.jpg');">					
+					<a title="traders ' club" href="http://l90571q0.beget.tech/$41/" target="_blank">
+						<p style="text-align:center;">
+							<img alt="Целевая страница(лендинг)" class="text-white" src="" width="50" height="50">
+						</p>
+					</a>	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 order-lg-2 portfolio-img" style="background-image: url('img/bg-portfolio-2.png');">					
+					<a title="Lines" href="http://l90571q0.beget.tech//" target="_blank">
+						<p style="text-align:center;">
+							<img alt="Игра  (Lines)" class="text-white" src="" width="50" height="50">
+						</p>
+					</a>	
+				</div>
+			</div>
+		</div>
+    </section>
+    <!-- ======= Конец секции портфолио ======= -->
+    
+    
+    <!-- ======= Начало секции сервис ======== -->
+    
+     <section  class="services" id="services">
+		<div class="container">
+			<div class="row" "services-text" "text-left">				
+				<div class="col-lg-6 services-lg-1 my-auto ">
+					<h3>Разработка дизайна и создание веб-сайта (Визитка*Лендинг),за отзыв!</h3>
+					<p>Что, я, предлагаю вам, если вы обратитесь ко мне?
+					Я предлагаю вам современный дизайн и эффекты из последних трендов технологий "Bootstrap" в веб-программировании.
+					<a title="Сайт визитка" href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D0%B9%D1%82-%D0%B2%D0%B8%D0%B7%D0%B8%D1%82%D0%BA%D0%B0" class="text-success">Сайт визитку,</a>
+					или 
+					<a title="Целевая страница(лендинг)" href="https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D0%BB%D0%B5%D0%B2%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" class="text-success">Целевую страницу(лендинг),</a>  
+					возможно вы захотите войти или расширить ваше присутствие в интернет сообществе, поменять что-то, давайте поработаем вместе, есть интересные идеи под ваши цели и предпочтения 
+					, согласую с вами особенности тематики и дизайна, сроки выполнения.</p>					
+					<a href="#contact" button type="button" class="btn btn-outline-secondary" aria-pressed="true">Оставить заявку</a>
+				</div>					
+				<div class="col-lg-6 services-lg-2 services-img" style="background-image: url('img/original.jpg');">
+				</div>				
+			</div>
+		</div>
+    </section>
+    
+    <!-- ======= Конец секции сервис ======== -->
+	
+	<!--=======Секция контакты=======-->
+	
+		<div class="container-contact">
+			<div class="container">
+				<div class="page-header" id="contact">
+					<h3 style="padding-top: 20px;">Контакты</h3>
+				</div>
+					<div class="row">
+						<div class="col-md-6">
+						<div class="row">
+							<div class="col-md-3 text-center">
+								<i class="fa fa-map-marker fa-4x" aria-hidden="true" style="color: #FFFFFF;"></i>
+							</div>
+							<div class="col-md-9 text-left">
+								<br />
+								<p>Россия, Москва.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 text-center">
+								<i class="fa fa-mobile fa-4x" aria-hidden="true" style="color: #FFFFFF;"></i>
+							</div>
+							<div class="col-md-9 text-left">
+								<br />
+								<a href="tel:+7 926 394 7145">+7 926 394 7145</a>
+							</div>							
+						</div>
+						<div class="row">
+							<div class="col-md-3 text-center">
+								<i class="fa fa-envelope-o fa-3x" aria-hidden="true" style="color: #FFFFFF;"></i>
+							</div>
+							<div class="col-md-9 text-left">
+								<br />								
+								<p>sdmail@web-prog-fu.ru</p>
+							</div>
+						</div>
+					</div>	
+					<div class="col-md-6">			
+						<form id="form1" class="widget-contact-form" class="form-validate" action="include/contact-form.php"  role="form" method="post">
+							<div class="form-group">
+								<label for="username">Ваше имя</label>
+								<input type="text" class="form-control" name="widget-contact-form-username"  required>
+							</div>
+							<div class="form-group">
+								<label for="email">Адрес электронной почты</label>
+								<input type="email" class="form-control" name="widget-contact-form-email"  required>
+							</div>                   
+							<div class="form-group">
+								<label for="message">Сообщение</label>
+								<textarea type="text" class="form-control" name="widget-contact-form-message" ></textarea>
+							</div>
+							<div class="form-group">                                
+                            </div>
+								<button type="submit" class="btn btn-outline-secondary">Отправить сообщение</button>	
+							<br/><br/>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix hidden-xs" style="width:100%; height:30px;"></div>
+		</div>
+	<!--=======Конец секция контакты=======-->
+	
+	<!-- ======= Секция реквизитов ======= -->
+	<section class="footer section-bg">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<p class="text-center mb-0">Copyright © 2020</p>
+					<p class="text-center mb-0">Дмитрий Скворцов</p>
+					<p class="text-center mb-0">Skype: dmilev39</p>
+					<p class="text-center mb-0">Email: sdmail@web-prog-fu.ru</p>						
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 text-center text-white">
+                <p>
+                    <a class="fa fa-twitter footer-socialicon fa-2x" target="_blank" href="https://twitter.com/"></a>
+                    <a class="fa fa-facebook footer-socialicon fa-2x" target="_blank" href="https://www.facebook.com/"></a>
+                    <a class="fa fa-google-plus footer-socialicon fa-2x" target="_blank" href="https://plus.google.com/"></a>
+                    <a class="fa fa-linkedin footer-socialicon fa-2x" target="_blank" href="https://plus.google.com/"></a>
+                </p>
+				</div>
+			</div>					
+		</div>	
+	</section>
+	<!-- ======= Конец секции реквизитов ======= -->
+	
+	 <!--Plugins-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <!--Template functions-->
+    <script src="js/functions.js"></script>    
+	<script type="module" src="js/main.js"></script>		    
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	
+	
+	</body>
 </html>
